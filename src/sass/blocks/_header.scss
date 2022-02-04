@@ -13,22 +13,18 @@
     font-weight: 500;
     font-size: 12px;
     text-align: center;
+    cursor: pointer;
     span {
       display: block;
       font-weight: 500;
       font-size: 18px;
     }
   }
-  &__phone {
+  .header__phone {
     display: block;
     font-weight: 700;
     font-size: 18px;
     color: #ffffff;
-  }
-  :hover {
-    transition: all 0.5s;
-    color: rgb(165, 231, 171);
-    text-decoration: none;
   }
   &__contacts {
     display: flex;
