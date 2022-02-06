@@ -25,6 +25,9 @@
     font-weight: 700;
     font-size: 18px;
     color: #ffffff;
+    &:hover {
+      color: rgb(255, 255, 255);
+    }
   }
   &__contacts {
     display: flex;
