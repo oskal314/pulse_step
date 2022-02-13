@@ -55,6 +55,38 @@ $(document).ready(function () {
     })
   });
 
+  // validateForms
+
+  function valideForms(form) {
+    $(form).validate({
+      rules: {
+        name: {
+          required: true,
+          minlength: 2
+        },
+        phone: "required",
+        email: {
+          required: true,
+          email: true
+        }
+      }
+    }); $('#consultation form').validate({
+      rules: {
+        name: {
+          required: true,
+          minlength: 2
+        },
+        phone: "required",
+        email: {
+          required: true,
+          email: true
+        }
+      }
+    });
+  }
+  valideForms('#consultation-form');
+  valideForms('#consultation form');
+  valideForms('#order form');
 
 
 });
