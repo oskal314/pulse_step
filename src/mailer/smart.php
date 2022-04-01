@@ -1,8 +1,8 @@
 <?php 
 
-$name = $_POST['name'];
-$phone = $_POST['phone'];
-$email = $_POST['email'];
+$name = $_GET['name'];
+$phone = $_GET['phone'];
+$email = $_GET['email'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
@@ -19,7 +19,7 @@ $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, 
 $mail->Port = 465;                                    // TCP port to connect to
  
 $mail->setFrom('artemosipovartem12@gmail.com', 'Pulse');   // От кого письмо 
-$mail->addAddress('artem-osipovartem@mail.ru');     // Add a recipient
+$mail->addAddress('artemisosipov11@gmail.com');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
